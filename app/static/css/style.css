@@ -90,8 +90,22 @@ img {
     color: var(--olive);
 }
 
+/* El menú móvil permanece oculto en PC */
+
 .mobile-menu {
     display: none;
+}
+
+.mobile-menu summary {
+    list-style: none;
+}
+
+.mobile-menu summary::-webkit-details-marker {
+    display: none;
+}
+
+.mobile-menu summary::marker {
+    content: "";
 }
 
 /* CONTENIDO GENERAL */
@@ -648,6 +662,10 @@ footer {
 
     .mobile-menu summary::-webkit-details-marker {
         display: none;
+    }
+
+    .mobile-menu summary::marker {
+        content: "";
     }
 
     .mobile-menu summary span {
